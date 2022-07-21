@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 0;
+  padding: 20px 0;
+}
+
+.flag {
+  max-width: 300px;
+  height: 200px;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flag-ukraine__top {
+  height: 50%;
+  background-color: blue;
+}
+
+.flag-ukraine__bottom {
+  height: 50%;
+  background-color: yellow;
+}
+
+.flag-japan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-japan__circle {
+  height: 110px;
+  width: 110px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.flag-iceland {
+  position: relative;
+  background-color: blue;
+}
+
+.flag-iceland__vertical-line {
+  position: absolute;
+  width: 40px;
+  background-color: red;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  z-index: 1;
+}
+
+.flag-iceland__vertical-underline {
+  position: absolute;
+  width: 20px;
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  left: 70px;
+  z-index: 3;
+}
+
+.flag-iceland__horizontal-line {
+  position: absolute;
+  height: 40px;
+  background-color: red;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.flag-czech {
+  position: relative;
+}
+
+.flag-czech::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 0 100px 130px;
+  border-color: transparent transparent transparent blue;
+}
+
+.flag-czech__top {
+  height: 50%;
+  background-color: white;
+}
+
+.flag-czech__bottom {
+  height: 50%;
+  background-color: red;
+}
